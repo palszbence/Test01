@@ -7,3 +7,4 @@ b=int(input("Kérel egy egész számot:"))
 print(f"ÖSSZEG:{a+b}")
 for i in range(1,3):
     print ("ASD")
+print("EZ A VEGE")
