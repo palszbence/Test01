@@ -6,7 +6,7 @@ import random
 
 def guess_number_game():
     # Generálj egy véletlenszámot 1 és 100 között
-    random_number = random.randint(1, 100)
+    random_number = random.randint(1, 100000)
     
     print("Találd ki a számot 1 és 100 között!")
     
@@ -24,6 +24,8 @@ def guess_number_game():
             print("Nagyon közel! Próbáld újra.")
         elif difference <= 20:
             print("Közel! Próbáld újra.")
+        elif difference <= 1000:
+            print("Nem Közel! Próbáld újra.")
         else:
             print("Messze van! Próbáld újra.")
 
